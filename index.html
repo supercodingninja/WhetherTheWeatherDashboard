@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title alt="The title to the browser tab you are currently on, is 'SCN Weather Dashboard,' connectected to the website url 'https://supercodingninja.github.io/WhetherTheWeatherDashboard'" title="Browser Tab">SCN Weather Dashboard</title>
+    <head>
+        <title alt="The title to the browser tab you are currently on, is 'SCN Weather Dashboard,' connectected to the website url 'https://supercodingninja.github.io/WhetherTheWeatherDashboard'" title="Browser Tab">SCN Weather Dashboard</title>
 
-    <link rel="shortcut icon" type="image/png" href="Assets/Media/apple-touch-icon.png">
-    <link rel="stylesheet" href="Assets/CSS/weather.css"/>
+        <link rel="shortcut icon" type="image/png" href="Assets/Media/apple-touch-icon.png">
+        <link rel="stylesheet" href="Assets/CSS/weather.css"/>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script src="Assets/Javascript/weather.js"></script>
-    <script src="Assets/Library/jQueryWDW.js"></script>
-</head>
-<body>
-    <span>
-        <h2>
-            <p></p>
-        </h2>
-    </span>
-</body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="Assets/Javascript/weather.js"></script>
+        <!-- <script src="Assets/Library/jQueryWDW.js"></script> -->
+    </head>
+
+    <body>
+        <!-- Ref. Link (style classes in HTML): https://www.hostinger.com/tutorials/website/how-to-create-classes-for-a-responsive-website-on-a-css-file#:~:text=You%20can%20put%20multiple%20style,and%2036%20pixels%20sized%20fonts. -->
+        <header class="container-fluid text-center text-#4169e1 bg-img src='Assets/Media/blueSky_whiteClouds.jpg'">
+            <div>
+                <h1><i>Your 5-Day Forecast!</i></h1>
+            </div>
+        </header>
+        
+        <form class="citySearch">
+            <p>City Forecast Desired:</p>
+            <input type="text" class="form" id="input">
+            <button class="btn" type="button" id="search"></button>
+        </form>
+
+
+    </body>
 </html>
