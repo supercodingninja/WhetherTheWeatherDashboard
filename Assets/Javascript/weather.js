@@ -1,9 +1,9 @@
 'use strict';
 // Ref. Links: https://api.jquery.com/jQuery.ajax/; https://openweathermap.org/forecast5; and https://stackoverflow.com/questions/49640174/building-a-5-day-forecast-using-open-weather-api-ajax-and-js //
-// Weather API Key 87fe806293mshd2b0a915f2b154ap1f05e8jsnd65e7e646933 from https://rapidapi.com/sangatpuria01/api/weather-com //
-var myAPIkey = "87fe806293mshd2b0a915f2b154ap1f05e8jsnd65e7e646933";
+// Weather API Key "a99269cb76b8b175359becc3ad8caa25" from https://home.openweathermap.org/ //
+var myAPIkey = "a99269cb76b8b175359becc3ad8caa25";
 var testCity = "Raleigh";
-var myURL = "https://rapidapi.com/sangatpuria01/api/weather-com";
+var myURL = "https://api.openweathermap.org/data/2.5/forecast";
 
 $.ajax({
     url: myURL, // I am attempting to call my API, by my variable "url".  I hope this works. //
@@ -28,7 +28,7 @@ $.ajax({
                 forecast += "Day " + index + ":" // Day to display. //
                 forecast += val.main.temp + "&degF" // Temperature in Fahrenheit. //
                 forecast += "<span> | " + val.weather[0].description + "</span>" // Weather description. //
-                forecast += "<img src='https://openweathermap.org/img/w/' + "val.weather[0].icon +" .png'>" // NEED ICON FROM MY API! Using reference a reference link to poulate an icon.//
+                forecast += "<img src='https://openweathermap.org/img/w/' + "val.weather[0].icon +" .png'>" // ICON //
             forecast += "</p>";
         },
         $("#displayForecast").html(index);
