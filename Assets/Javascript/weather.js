@@ -33,4 +33,5 @@ $.ajax({
         },
         $("#displayForecast").html(index);
     },
+    // Need help with failure function. //
 });
