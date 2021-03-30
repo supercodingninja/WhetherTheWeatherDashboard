@@ -1,6 +1,5 @@
 'use strict';
 // Ref. Links: https://api.jquery.com/jQuery.ajax/; https://openweathermap.org/forecast5; and https://stackoverflow.com/questions/49640174/building-a-5-day-forecast-using-open-weather-api-ajax-and-js //
-// Weather API Key "a99269cb76b8b175359becc3ad8caa25" from https://home.openweathermap.org/ //
 
 // jQuery //
 $("#search").on("click", function (e) {
@@ -43,3 +42,8 @@ $("#search").on("click", function (e) {
         }
     });
 });
+
+
+function searchHistory () {
+    this.innerText = searchEl.val();
+}
