@@ -5,7 +5,7 @@
 // jQuery //
 $("#search").on("click", function (e) {
     e.preventDefault();
-    // var testCity = $(".City").val;
+
     var City = $("#input").val();
 
     // Relax AJAX Attempt- Get Help! //
@@ -36,7 +36,5 @@ $("#search").on("click", function (e) {
             console.log(forecast);
                 $("#forecast").html(forecast);
         }
-        // Need help with failure function. //
     });
-
 });
