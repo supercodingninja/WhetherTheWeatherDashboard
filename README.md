@@ -37,16 +37,12 @@ Created an awesome and Server API application; which can be utilize for future e
 
 ## References
 ###### [Back to Table of Contents](#Table-of-Contents)
-1.  [NPMjs](https://www.npmjs.com/) provides Documentation, Installation, Examples, Methods, Objects, Questions, Answers, Separator, Prompt Types, User Interfaces and Layouts, Reactive Interface, Support, Known issues, News, Contributing, License, and Plugins.
+1.  [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) provides documentations on how to add your shield, for creditbility.  Please feel free to view this resource, for your future developments.
 
 2.  [Shields IO](https://shields.io/) provides documentations on how to add your shield, for creditbility.  Please feel free to view this resource, for your future developments.
 
 3.  **[Eloquent JavaScript](https://eloquentjavascript.net/)**, 3rd edition (2018)
 This is a book about JavaScript, programming, and digital wonders. Read it online here; or get your own paperback copy.  Written by Marijn Haverbeke.  Licensed under a Creative Commons attribution-noncommercial license. All code in this book may also be considered licensed under an MIT license.
-
-5.  [Guide to Handlebars: Templating Engine for Node/JavaScript](https://stackabuse.com/guide-to-handlebars-templating-engine-for-node/) explains that express is a routing, and middleware is a web framework; which has minimal functionality of its own (express applications are series of middleware function calls).
-
-6.  [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) provides documentations on how to add your shield, for creditbility.  Please feel free to view this resource, for your future developments.
 
 ## Ackowledgements
 ###### [Back to Table of Contents](#Table-of-Contents)
@@ -64,7 +60,7 @@ Make it a point to tackle new code, weekly (at least, periodaclly); and break it
 ## License
 ![MIT](https://img.shields.io/badge/License-MIT-blue)
 
-<i>Employee-Tracker</i><b>©</b>  2021 Frederick Thomas, [Super Coding Ninja™](https://github.com/supercodingninja).
+<i>WhetherTheWeatherDashboard</i><b>©</b>  2020 Frederick Thomas, [Super Coding Ninja™](https://github.com/supercodingninja).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
