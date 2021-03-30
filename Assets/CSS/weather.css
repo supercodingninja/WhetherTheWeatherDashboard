@@ -5,5 +5,49 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
-    box-shadow: rgba(10, 10, 10, .3);
+}
+
+.rainbow {
+    margin-top: 50px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+    45deg,
+    #ff00ee,
+    #0000ff,
+    #00ff00,
+    #ff0000,
+    #ff00ee,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: contain;
+  max-width: calc(250px + 4px);
+  max-height: calc(250px + 4px);
+  width: calc(225px + 4px);
+  height: calc(150px + 4px);
+  z-index: -1;
+  animation: animate 7s linear infinite;
+  animation-play-state: running;
+  border-radius: 22%;
+  border: 305px;
+}
+
+@keyframes animate {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: contain 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+h1 {
+    font-weight: 300;
 }
