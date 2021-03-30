@@ -15,22 +15,27 @@ $("#search").on("click", function (e) {
         type: "GET",
 
         success: function (data) {
-            console.log('Data populated: ', data); // What am I getting for my data? //
+            console.log('Data populated: ', data); // This will show me what am I getting for my data. //
 
             var forecast = "";
 
-            forecast += "<h2>" + data.city.name + "</h2>"; // Suppose to display city queried. //
+            forecast += "<h2>" + data.city.name + "</h2>"; // Suppose to display city queried, here. //
 
            for (var i = 0; i < data.list.length; i++) {
             
                 if (data.list[i].dt_txt.includes("00:00:00")) {
                     forecast += "<p>"
+                    
                     forecast += moment(data.list[i].dt, "X").format("MM/DD/YYYY") // Temperature in Fahrenheit. //
+                    
                     forecast += "<br> <img src='https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png'>" // ICON //
-                    forecast += data.list[i].main.temp + "&degF" // Temperature in Fahrenheit. //
-                    forecast += data.list[i].main.humidity + "%" // Temperature in Fahrenheit. //
-                    // forecast += "<span> | " +  data.list[i].weather[0].description + "</span>" // Weather description. //
-                    forecast += "</p>";
+
+                    forecast += "<span>" +  data.list[i].weather[0].description + "</span>" // Weather description. //
+                    forecast += "</p> <br>";
+                    
+                    forecast += data.list[i].main.temp + "&degF <br>" // Temperature in Fahrenheit. //
+                    
+                    forecast += data.list[i].main.humidity + "% Humidity" // Humidity. //
                 }
             }
             console.log(forecast);

@@ -1,151 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title
+                alt="The title to the browser tab you are currently on, is 'SCN Weather Dashboard,' connectected to the website url 'https://supercodingninja.github.io/WhetherTheWeatherDashboard'"
+                title="Browser Tab">SCN Weather Dashboard</title>
 
-    <title
-        alt="The title to the browser tab you are currently on, is 'SCN Weather Dashboard,' connectected to the website url 'https://supercodingninja.github.io/WhetherTheWeatherDashboard'"
-        title="Browser Tab">SCN Weather Dashboard</title>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png" href="Assets/Media/apple-touch-icon.png">
-    <link rel="stylesheet" href="Assets/CSS/weather.css" />
-</head>
 
-<body>
-    <!-- Ref. Link (style classes in HTML): https://www.hostinger.com/tutorials/website/how-to-create-classes-for-a-responsive-website-on-a-css-file#:~:text=You%20can%20put%20multiple%20style,and%2036%20pixels%20sized%20fonts. -->
-    <header class="container-fluid text-center text-#4169e1 bg-img src='Assets/Media/blueSky_whiteClouds.jpg'">
-        <div class="rainbow">
-            <h1><i>Your<br>5-Day<br></b>Forecast!</i></h1>
-        </div>
-    </header>
+            <link rel="shortcut icon" type="image/png" href="./Assets/Media/apple-touch-icon.png">
+            <link rel="stylesheet" href="./Assets/CSS/weather.css" />
+        </head>
 
-    <main id="container">
-        <form class="citySearch">
-            <p>City Forecast Desired:</p>
-            <input type="text" class="form" id="input">
-            <button class="btn" type="button" id="search">search</button>
-        </form>
 
-        <aside>
-            <div>
-                <div id="results-container">
-                    <div class="btn-group-vertical col-12" id="results">
-                        <button class="btn text-left border rounded" id="search" style="text-transform: capitalize;">
-                            <!-- Some City Should Appear Here -->
-                        </button>
+        <body>
+            <heade class="rainbow">
+                <div class="">
+                    <h1><i></i>Your 5-Day Forecast!</i></h1>
+                </div>
+            </header>
 
-                        <button class="btn text-left border rounded" id="search" style="text-transform: capitalize;">
-                            <!-- Some City Should Appear Here -->
-                        </button>
+            
+            <main id="container">
+                <form class="citySearch">
+                    <!-- Search Input Field -->
+                    <input type="text" class="form" id="input" placeholder="Search Desire Location" style="width: 325px">
 
-                        <button class="btn text-left border rounded" id="search" style="text-transform: capitalize;">
-                            <!-- Some City Should Appear Here -->
-                        </button>
+                    <!-- Initiate Search With This Button -->
+                    <button class="btn" type="button" id="search">search</button>
+                </form><br>
 
-                        <button class="btn text-left border rounded" id="search" style="text-transform: capitalize;">
-                            <!-- Some City Should Appear Here -->
-                        </button>
 
-                        <button class="btn text-left border rounded" id="search" style="text-transform: capitalize;">
-                            <!-- Some City Should Appear Here -->
-                        </button>
+                <!-- Retrieve Search History Results With These Buttons -->
+                <aside>
+                    <div>
+                        <div id="results-container rainbow">
+                            <div class="btn-group-vertical col-12" id="results">
+                                <button class="btn text-left border rounded" id="search" style="text-transform: capitalize;">
+                                    <!-- Some City Should Appear Here -->
+                                </button><br>
+                                
+                                <button class="btn text-left border rounded" id="search" style="text-transform: capitalize;">
+                                    <!-- Some City Should Appear Here -->
+                                </button><br>
+                                
+                                <button class="btn text-left border rounded" id="search" style="text-transform: capitalize;">
+                                    <!-- Some City Should Appear Here -->
+                                </button><br>
+                                
+                                <button class="btn text-left border rounded" id="search" style="text-transform: capitalize;">
+                                    <!-- Some City Should Appear Here -->
+                                </button><br>
+                                
+                                <button class="btn text-left border rounded" id="search" style="text-transform: capitalize;">
+                                    <!-- Some City Should Appear Here -->
+                                </button><br>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Current Weather Conditions -->
+                <aside>
+                    <section id="weatherConditions" class="col-m-5">
+                        <span>
+                            <h2></h2>
+                            <p>Temperature</p>
+                            <p>Humidity</p>
+                            <p>Wind Speed</p>
+                            <p></p>UV Index
+                        </span>
+                    </section>
+                </aside>
+
+                <!-- 5-Day Forecast -->
+                <div class="container row justify-content-between" id="forecast">
+                    <div class="card bg-primary rounded text-black mb-1 col-med-12">
+                        <div class="card-body">
+                            <h4 class="card-title" id="day1">
+                                <!--Date should append here-->></h4>
+
+                            <img id="day1" src="https://openweathermap.org/img/wn/01d.png">
+
+                            <p id="Temp1">
+                                <!--Temperature should append here-->></p>
+                            <p id="Humid1">
+                                <!--Humidity should append here-->></p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-primary rounded text-black mb-1 col-med-12">
+                        <div class="card-body">
+                            <h4 class="card-title" id="day2">
+                                <!--Date should append here-->></h4>
+
+                            <img id="day2" src="https://openweathermap.org/img/wn/01d.png">
+
+                            <p id="Temp2">
+                                <!--Temperature should append here-->></p>
+                            <p id="Humid2">
+                                <!--Humidity should append here-->></p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-primary rounded text-black mb-1 col-med-12">
+                        <div class="card-body">
+                            <h4 class="card-title" id="day3">
+                                <!--Date should append here-->></h4>
+
+                            <img id="day3" src="https://openweathermap.org/img/wn/01d.png">
+
+                            <p id="Temp3">
+                                <!--Temperature should append here-->></p>
+                            <p id="Humid3">
+                                <!--Humidity should append here-->></p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-primary rounded text-black mb-1 col-med-12">
+                        <div class="card-body">
+                            <h4 class="card-title" id="day4">
+                                <!--Date should append here-->></h4>
+
+                            <img id="day4" src="https://openweathermap.org/img/wn/01d.png">
+
+                            <p id="Temp4">
+                                <!--Temperature should append here-->></p>
+                            <p id="Humid4">
+                                <!--Humidity should append here-->></p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-primary rounded text-black mb-1 col-med-12">
+                        <div class="card-body">
+                            <h4 class="card-title" id="day5">
+                                <!--Date should append here-->></h4>
+
+                            <img id="day5" src="https://openweathermap.org/img/wn/01d.png">
+
+                            <p id="Temp5">
+                                Temperature: </p>
+                            <p id="Humid5">
+                                <!--Humidity should append here--></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </aside>
+            </main>
 
-        <aside>
-            <section id="weatherConditions" class="col-m-5">
-                <span>
-                    <h2></h2>
-                    <p>Temperature</p>
-                    <p>Humidity</p>
-                    <p>Wind Speed</p>
-                    <p></p>UV Index
-                </span>
-            </section>
-        </aside>
 
-        <div class="container row justify-content-between" id="forecast">
-            <div class="card bg-primary rounded text-black mb-1 col-med-12">
-                <div class="card-body">
-                    <h4 class="card-title" id="day1">
-                        <!--Date should append here-->></h4>
 
-                    <img id="day1" src="https://openweathermap.org/img/wn/01d.png">
-
-                    <p id="Temp1">
-                        <!--Temperature should append here-->></p>
-                    <p id="Humid1">
-                        <!--Humidity should append here-->></p>
-                </div>
-            </div>
-
-            <div class="card bg-primary rounded text-black mb-1 col-med-12">
-                <div class="card-body">
-                    <h4 class="card-title" id="day2">
-                        <!--Date should append here-->></h4>
-
-                    <img id="day2" src="https://openweathermap.org/img/wn/01d.png">
-
-                    <p id="Temp2">
-                        <!--Temperature should append here-->></p>
-                    <p id="Humid2">
-                        <!--Humidity should append here-->></p>
-                </div>
-            </div>
-
-            <div class="card bg-primary rounded text-black mb-1 col-med-12">
-                <div class="card-body">
-                    <h4 class="card-title" id="day3">
-                        <!--Date should append here-->></h4>
-
-                    <img id="day3" src="https://openweathermap.org/img/wn/01d.png">
-
-                    <p id="Temp3">
-                        <!--Temperature should append here-->></p>
-                    <p id="Humid3">
-                        <!--Humidity should append here-->></p>
-                </div>
-            </div>
-
-            <div class="card bg-primary rounded text-black mb-1 col-med-12">
-                <div class="card-body">
-                    <h4 class="card-title" id="day4">
-                        <!--Date should append here-->></h4>
-
-                    <img id="day4" src="https://openweathermap.org/img/wn/01d.png">
-
-                    <p id="Temp4">
-                        <!--Temperature should append here-->></p>
-                    <p id="Humid4">
-                        <!--Humidity should append here-->></p>
-                </div>
-            </div>
-
-            <div class="card bg-primary rounded text-black mb-1 col-med-12">
-                <div class="card-body">
-                    <h4 class="card-title" id="day5">
-                        <!--Date should append here-->></h4>
-
-                    <img id="day5" src="https://openweathermap.org/img/wn/01d.png">
-
-                    <p id="Temp5">
-                        Temperature: </p>
-                    <p id="Humid5">
-                        <!--Humidity should append here--></p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
-    <script src="Assets/Javascript/weather.js"></script>
-    <!-- <script src="Assets/Library/jQueryWDW.js"></script> -->
-</body>
-
-</html>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+            <script src="Assets/Javascript/weather.js"></script>
+        </body>
+    </html>
