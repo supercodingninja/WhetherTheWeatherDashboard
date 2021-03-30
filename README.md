@@ -1,14 +1,19 @@
 <h1 align="center">Weather Dashboard</h1>
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. As a traveler, it's nice to see the weather outlook (especially when travelling multiple cities).  Having a great outlook, can create help a successful trip.  The user can plan a trip accordingly with this application.
 
 Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.  WHEN I view the UV index,
 
 ## User Story
 
-    As a traveler, it's nice to see the weather outlook (especially when travelling multiple cities).  Having a great outlook, can help a successful trip.  The user can plan a trip accordingly with this application.  When I view current weather conditions for my desired city, I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index, I am presented with a color that indicates whether the conditions are favorable, moderate, or severe.  WHEN I view future weather conditions for that city, I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity.  WHEN I click on a city in the search history, I am again, presented with current and future conditions for that city.  WHEN I open the weather dashboard, I am presented with the last searched city forecast.
+### As An End-User
+    1. When I view current weather conditions for my desired city, I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index, I am presented with a color that indicates whether the conditions are favorable, moderate, or severe.
+    2. WHEN I view future weather conditions for that city, I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity.
+    3. WHEN I click on a city in the search history, I am again, presented with current and future conditions for that city.  WHEN I open the weather dashboard, I am presented with the last searched city forecast.
 
-    As a desiner and developer, the weather dashboard should have form inputs for the end user, in order to collect desired data. When the user search for a city the user should be presented with current, and future conditions for that city; and that city is should be added to the user's search history.
+### As A Designer/Developer
+    1. As a desiner and developer, the weather dashboard should have form inputs for the end user, in order to collect desired data.
+    2. When the user search for a city the user should be presented with current, and future conditions for that city; and that city is should be added to the user's search history.
 
 
 The following image demonstrates the application functionality:
