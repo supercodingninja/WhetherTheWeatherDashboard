@@ -1,0 +1,9 @@
+body {
+    font-size:24px;
+    font-family: 'Courier New', Courier, monospace, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(../Media/whatsDweather.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    box-shadow: rgba(10, 10, 10, .3);
+}
