@@ -22,7 +22,7 @@ The following image demonstrates the application functionality:
 
 ## Usage Information
 ###### [Back to Table of Contents](#Table-of-Contents)
-This repository is a great way to understand CLI, nodeJS and express, and MySQL.  Feel free to use it as a template for projects (build upon it, and write your own code), non-profit organizations, academic clubs; and much more!  Not for commercial use, unless granted by the author.
+This repository is a great way to understand how to develop a Server-side API Application.  Feel free to use it as a template for projects (build upon it, and write your own code), non-profit organizations, academic clubs; and much more!  Not for commercial use, unless granted by the author.
 
 ## Contribution Guidelines
 ###### [Back to Table of Contents](#Table-of-Contents)
