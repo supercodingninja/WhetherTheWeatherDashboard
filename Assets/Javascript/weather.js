@@ -1,4 +1,7 @@
 'use strict';
+
+const searchEl = $('#searchEl')
+
 // Ref. Links: https://api.jquery.com/jQuery.ajax/; https://openweathermap.org/forecast5; and https://stackoverflow.com/questions/49640174/building-a-5-day-forecast-using-open-weather-api-ajax-and-js //
 
 // jQuery //
@@ -27,14 +30,15 @@ $("#search").on("click", function (e) {
                     
                     forecast += moment(data.list[i].dt, "X").format("MM/DD/YYYY") // Temperature in Fahrenheit. //
                     
-                    forecast += "<br> <img src='https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png'>" // ICON //
+                    forecast += "<img src='https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png'>" // ICON //
 
-                    forecast += "<span>" +  data.list[i].weather[0].description + "</span>" // Weather description. //
-                    forecast += "</p> <br>";
+                    forecast +=  data.list[i].weather[0].description + " |" // Weather description. //
                     
-                    forecast += data.list[i].main.temp + "&degF <br>" // Temperature in Fahrenheit. //
+                    forecast += data.list[i].main.temp + "&degF | " // Temperature in Fahrenheit. //
                     
                     forecast += data.list[i].main.humidity + "% Humidity" // Humidity. //
+                    
+                    forecast += " | " + data.list[i].uvi // UV Index //
                 }
             }
             console.log(forecast);
@@ -43,7 +47,3 @@ $("#search").on("click", function (e) {
     });
 });
 
-
-function searchHistory () {
-    this.innerText = searchEl.val();
-}
