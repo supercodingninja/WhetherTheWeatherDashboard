@@ -1,0 +1,80 @@
+body {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(../Media/blueSky_whiteClouds.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    color: #fff;
+};
+
+h1 {
+    font-weight: 300;
+};
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+};
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+};
+
+.myButton:active {
+	position:relative;
+	top:1px;
+};
+
+.rainbow {
+    position: absolute;
+    width: 350px;
+    height: 30px;
+    background: linear-gradient(0deg, #000000, #262626);
+    border-radius: 22%;
+  };
+  
+  .rainbow::before,
+  .rainbow::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    background: linear-gradient(
+      45deg,
+      #ff00ee,
+      #0000ff,
+      #00ff00,
+      #ff0000,
+      #ff00ee,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000
+    );
+    background-size: auto;
+    max-width: calc(500px + 4px);
+    max-height: calc(35px + 4px);
+    width: calc(475px + 4px);
+    height: calc(35px + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    animation-play-state: running;
+    border-radius: 0;
+  };
+  
+  .rainbow::after {
+    filter: blur(32px);
+  };
