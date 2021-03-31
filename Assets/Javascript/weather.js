@@ -38,7 +38,7 @@ $("#search").on("click", function (e) {
                     
                     forecast += data.list[i].main.humidity + "% Humidity" // Humidity. //
                     
-                    forecast += " | " + data.list[i].uvi // UV Index //
+                    forecast += " | " + data.uvi // UV Index //
                 }
             }
             console.log(forecast);
